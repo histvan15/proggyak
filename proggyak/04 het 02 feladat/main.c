@@ -3,7 +3,8 @@
 
 int main()
 {
-    int ok,upper,lower,ch;
+    int ok,upper,lower;
+    char ch;
     do {
     ok = 1;
     printf("Add meg az intervallum felso hatarat: ");
@@ -12,6 +13,22 @@ int main()
     ok = 0;
     while ((ch=getchar())!='\n') ;
     }
+    } while (!ok);
+
+    do {
+    ok = 1;
+    printf("Add meg az intervallum alsó hatarat: ");
+
+    if (scanf("%d", &lower)!=1 || lower<1000) {
+
+    printf("Hibas input\n");
+
+    ok = 0;
+
+    while ((ch=getchar())!='\n') ;
+
+    }
+
     } while (!ok);
 
     return 0;
