@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1633444409 source:c:\istvtemp\proggyak.git\5 het 1 feladat\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
